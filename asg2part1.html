@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="James Fan">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+  	<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,500,700" rel="stylesheet">
+  	<style>
+  </style>
+</head>
+<body>
+
+	<h1 >Shapeshift.io</h1>
+
+	<button type="button" onclick="change()">Style Change</button>
+
+	<h1 id="head">Hello this will change. As will most things in life. Time is the the most important resource we have that we can not keep. 
+		<br>
+		<br> There would have been a time for such a word. 
+		<br> — To-morrow, and to-morrow, and to-morrow, 
+		<br> Creeps in this petty pace from day to day, 
+		<br> To the last syllable of recorded time;
+		<br> And all our yesterdays have lighted fools
+		<br> The way to dusty death. Out, out, brief candle!
+		<br> Life's but a walking shadow, a poor player
+		<br> That struts and frets his hour upon the stage
+		<br> And then is heard no more. It is a tale
+		<br> Told by an idiot, full of sound and fury
+		<br> Signifying nothing.
+</h1>
+
+	<button type="button" onclick="randarray()">Win a Prize!</button>
+	<br>
+	<br>	
+	<div id="prize"></div>
+	<br>
+
+	<button type="button" onclick="swapT()">Swap Text</button>
+
+	<p id="p1">Watch this amazing text move before your very eyes! It will confound the senses! This button is mighty!</p>
+	<p id="p2">Huzzah! You hold the power to your reading direction and fate. The button press sends a sense of cascading power of control over you.</p>
+
+	<button type="button" onclick="swapI()">Swap Image</button>
+	<br>
+	<br>
+	<img id="img1" src="images/cat1.jpg" width ="400px" height = "300px">
+	<br>
+	<img id="img2" src="images/dog1.jpeg" width="400px" height="300px">
+	<br>
+	<br>
+
+
+	<h1>Click Below</h1>
+
+	<img id="pipe" src="images/pipe.jpg" width='400px' height='300px' onclick="newdoc()">
+
+	<h1>Pounds to Kilograms: Input Field</h1>
+
+	<label>Enter Weight in Pounds:</label>
+		<input type="text" name="weight" id="weight_lb">
+
+	<button type="button" onclick="convert()">Convert Pounds to Kilograms</button>
+	<br>
+	<textarea id="result2"></textarea>
+
+
+	<script>
+		document.getElementById("pipe").onclick = newdoc();
+
+	</script>
+
+
+	<script src="js/asg2part1.js"></script>
+
+</body>
+</html>

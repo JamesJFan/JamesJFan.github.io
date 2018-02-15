@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pho'geddaboudit!</title>
+	<meta charset="utf-8">
+	<meta name="author" content="James Fan">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+  	<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,500,700" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link rel="shortcut icon" href="images/pho.png">
+  	<style>
+
+  	.center {
+  		max-width: 100%;
+  		height: 100%;
+  		margin: 0 auto;
+  		position: fixed;
+  		top:0;
+  		right:0;
+  		bottom:0;
+  		left:0;
+  		overflow: hidden;
+  		z-index: -100;
+  	}
+
+  	.name {
+  		padding: 20px;
+  		padding-top: 10%;
+  		color: #FDFDFD;
+  		font-family: 'Kaushan Script', cursive, 'Lato';
+  		font-weight: 500;
+  		font-size: 5em;
+  		padding-top: 50px;
+
+  	}
+
+  	.under {
+  		font-weight: 200;
+  		font-size: 2em;
+  		font-family: 'Lato', sans-serif;
+  	}
+
+  	.container {
+  		background-color: rgba(0, 0, 0, 0.3);
+  		position: absolute;
+  		height: 100%;
+  		width: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+  	}
+
+  	@media screen and (max-width: 680px) {
+   		.name {
+   			padding: 30px;
+   		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+   		.name {
+   			padding: 30px;
+   		}
+	}
+
+
+
+  	.project {
+  		color: #FDFDFD;
+  	}
+
+    #personal {
+      font-family:'lato', sans-serif;
+      font-weight: 200;
+      font-size: 1.2em;
+      color: #FDFDFD;
+      padding: 20px;
+
+    }
+
+    #radio {
+      font-family:'lato', sans-serif;
+      font-weight: 200;
+      font-size: 1.2em;
+      color: #FDFDFD;
+      padding: 20px;
+    }
+
+    #label {
+      font-family:'lato', sans-serif;
+      font-weight: 200;
+      font-size: 1.2em;
+      color: #FDFDFD;
+      padding: 20px;
+    }
+
+    #comment {
+      font-family:'lato', sans-serif;
+      font-weight: 200;
+      font-size: 1.2em;
+      color: #FDFDFD;
+      padding: 20px;
+    }
+    #guest {
+      font-family:'lato', sans-serif;
+      font-weight: 200;
+      font-size: 1.2em;
+      color: #FDFDFD;
+      padding: 20px;
+    }
+
+    #color {
+      font-family:'lato', sans-serif;
+      font-weight: 200;
+      font-size: 1.2em;
+      color: #FDFDFD;
+      padding: 20px;
+    }
+
+    #cool {
+      font-family:'lato', sans-serif;
+      font-weight: 200;
+      font-size: 1.2em;
+      color: slateblue;
+      padding: 20px;
+    }
+    #allergy {
+      font-family:'lato', sans-serif;
+      font-weight: 200;
+      font-size: 1.2em;
+      color: #FDFDFD;
+      padding: 20px;
+    }
+
+    #label {
+      font-family:'lato', sans-serif;
+      font-weight: 200;
+      font-size: 1.2em;
+      color: #FDFDFD;
+      padding: 20px;
+    }
+
+  	</style>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="row">
+	    	<div class="col-12 center">
+	        	<video autoplay loop muted>
+  					<source src="video/hero.mp4" type="video/mp4">
+				</video>
+	    	</div>
+		</div>
+
+		<header>
+      <nav>
+            <div class="row">
+              <div class="col-2 logo">
+                  <a href="index.html"><img src="images/pho.png" alt="Home"></a>
+              </div>
+              <div class="col-2 link">
+                  <a href="menu.html">Menu</a>
+              </div>
+              <div class="col-2 link">
+                <a href="about.html">About</a>
+              </div>
+              <div class="col-2 link">
+                <a href="catering.html">Catering</a>
+              </div>
+              <div class="col-2 link">
+                <a href="news.html">News</a>
+              </div>
+              <div class="col-2 link">
+                  <a href="contact.html">Contact</a>
+              </div>
+            </div>
+          </nav>
+      </header>
+
+
+
+	    <section class="featured-work">
+	    	<div class="row">
+            <div class="col-3"></div>
+	        	<div class="col-6 project" style="text-align: left">
+	          		
+	          	<form action="/action_page.php" method="get">
+                <fieldset id="Personal">
+                  <legend>Personal Information:</legend>
+                  Name: <input type="text"><br>
+                  Email: <input type="Email"><br>
+                  Phone Number: <input type="text">
+                </fieldset>
+              </form>
+
+              <br>
+
+              <form action="/action_page.php" method="get" id="radio">
+                <label>Reason for Contact:</label> <br>
+                <input type="radio" name="reason" value="reservation" checked>Reservation<br>
+                <input type="radio" name="reason" value="catering">Catering<br>
+                <input type="radio" name="reason" value="other"> Other
+              </form>
+
+              <br>
+
+              <label id="label">Where did you here about us?</label>
+              <br>
+              <select id="select" name="Referral" action="/action_page.php" method="get">
+                <optgroup label="Search Engines">
+                  <option value="google">Google</option>
+                  <option value="bing">Bing</option>
+                  <option value="yahoo">Yahoo</option>
+                </optgroup>
+                <option value="search">Flyer</option>
+                <option value="yelp">Yelp</option>
+                <option value="fried">Friend</option>
+                <option value="other">Other</option>
+              </select> <br>
+              <br>
+
+
+
+              <textarea id="comment" name="message" rows="10" cols="30" action="/action_page.php" method="get">
+              Comment
+              </textarea>
+              <br>
+
+              <form  id="allergy" action="/action_page.php" method="get">
+                <label>Check Allergies</label>
+                  <option value="corn">Corn</option><input type="checkbox" value="corn">
+                  <option value="peanuts">Peanuts</option><input type="checkbox" value="checkbox">
+                  <option value="soy">Soy</option><input type="checkbox" value="checkbox">
+                  <option value="sesame">Sesame</option><input type="checkbox" value="checkbox">
+                  <option value="Shellfish">Shellfish</option><input type="checkbox" value="checkbox">
+              </form>
+
+              <form id="guest" action="/action_page.php" method="get">
+                <label>Number of Guests (Reservation)</label>
+                  <option value="guests" min="1" max="20">Guests:</option><input type="Number" value="number">
+              </form>
+
+              <form id="cool" action="/action_page.php" method="get">
+                How Cool you are: <input type="range" name="points" min="0" max="10">
+              </form>
+
+              <p id="color" action="/action_page.php" method="get">
+                Pick a color: <input type=color name=color > 
+              <p>
+
+
+              <br>
+
+              <button type="reset" value="Reset">Reset</button>
+              <br>
+              <input type="submit" value="Submit">
+
+
+	        	</div>
+	     	 </div>
+         <div class="col-3">
+           
+
+
+         </div>
+
+
+
+	    </section>
+
+	</div>
+</body>
+</html>

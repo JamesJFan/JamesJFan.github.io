@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>James Fan i6 Site</title>
+	<meta charset="utf-8">
+	<meta name="author" content="James Fan">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+  	<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,500,700" rel="stylesheet">
+  	<style>
+
+  	.center {
+  		max-width: 100%;
+  		height: 100%;
+  		margin: 0 auto;
+  		position: fixed;
+  		top:0;
+  		right:0;
+  		bottom:0;
+  		left:0;
+  		overflow: hidden;
+  		z-index: -100;
+  	}
+
+  	.me {
+  		width: 400px;
+  		max-width: 100%;
+  		height: auto;
+  		margin: 0 auto;
+  		display: block;
+  		float: right;
+  		padding-bottom: 10px;
+  	}
+
+  	.bio {
+  		padding: 20px;
+  		padding-top: 0px;
+  		color: #FDFDFD;
+  	}
+
+  	@media screen and (max-width: 680px) {
+   		.bio {
+   			padding: 30px;
+   		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+   		.bio {
+   			padding: 30px;
+   		}
+	}
+
+
+
+  	.project {
+  		color: #FDFDFD;
+  	}
+
+  	a:hover {
+  		color: slateblue;
+  	}
+
+  	</style>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="row">
+	    	<div class="col-12 center">
+	        	<video autoplay loop muted>
+  					<source src="video/node.mp4" type="video/mp4">
+				</video>
+	    	</div>
+		</div>
+
+		<header>
+	      <div class="row">
+	        <div class="col-4 logo">
+	          <a href="../index.html"><img src="images/stack.png" alt="Home Sweet Home"></a>
+	        </div>
+	        <div class="col-8 signature">
+	          <h1 class="name">NYU Holiday Finder</h1>
+	          <h3>NYU 2017-2018 Calendar</h3>
+	        </div>
+	      </div>
+	    </header>
+
+
+	    <section class="featured-work">
+	    	<div class="row">
+	        	<div class="col-12 project">
+	          		<form id="myForm">
+  						Enter a date after 2017-09-01 and after 2018-08-31:
+						<input id="calendar" type="date" name="bday" min="2017-09-01" max="2018-08-31"><br>
+					</form>
+
+	        	</div>
+	        	<div class="col-12 project">
+	        		<button type="button" onclick="calendar()">Find NYU Holiday</button>
+	          		<p id="output"></p>
+
+	        	</div>
+	     	 </div>
+
+
+
+	    </section>
+
+	</div>
+</body>
+<script src="js/calendar.js"></script>
+</html>

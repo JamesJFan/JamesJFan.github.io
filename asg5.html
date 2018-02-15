@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>James Fan i6 Site</title>
+	<meta charset="utf-8">
+	<meta name="author" content="James Fan">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+  	<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,500,700" rel="stylesheet">
+  	<style>
+
+  	.center {
+  		max-width: 100%;
+  		height: 100%;
+  		margin: 0 auto;
+  		position: fixed;
+  		top:0;
+  		right:0;
+  		bottom:0;
+  		left:0;
+  		overflow: hidden;
+  		z-index: -100;
+  	}
+
+  	.me {
+  		width: 400px;
+  		max-width: 100%;
+  		height: auto;
+  		margin: 0 auto;
+  		display: block;
+  		float: right;
+  		padding-bottom: 10px;
+  	}
+
+  	.bio {
+  		padding: 20px;
+  		padding-top: 0px;
+  		color: #FDFDFD;
+  	}
+
+  	@media screen and (max-width: 680px) {
+   		.bio {
+   			padding: 30px;
+   		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+   		.bio {
+   			padding: 30px;
+   		}
+	}
+
+
+
+  	.project {
+  		color: #FDFDFD;
+  	}
+
+  	a:hover {
+  		color: slateblue;
+  	}
+
+  	p, h1, h2, h3, h4 {
+  		color: black;
+  	}
+
+  	label {
+  		color: black;
+  	}
+
+  	#move {
+  		background-color: blue;
+  		height: 100px;
+  		width: 100px;
+  		position: relative;
+  		margin: auto;
+  	}
+
+  	</style>
+</head>
+<body>
+
+	<div class="container">
+
+	    <section class="featured-work">
+	    	<div class="row">
+	        	<div class="col-12 project">
+	          		<h2>Assignment 5: jQuery</h2>
+
+	          		<h1 id="special">This text will change color!</h1>
+	          		<br>
+	          		<br>
+
+	          		<div class="highlight">
+	          			<p>This is a div that will change background color.</p>
+	          		</div>
+	          		<br>
+	          		<br>
+
+	          		<button id="change">Change Styles</button> <br>
+	          		<br>
+
+	          		<img id="doge" src="images/dog1.jpeg" height="300px">
+
+	          		<p>If you click on the "Hide" button, the image will disappear.</p>
+
+					<button id="hide">Hide</button>
+					<button id="show">Show</button>
+					<button id="fade">Fade Out</button><br>
+					<br>
+					<br>
+
+					<div id="move">
+
+					</div>
+					<br>
+
+					<br>
+
+					<button id="animate">Animate</button>
+
+					<br>
+					<br>
+
+					<label>Username:</label>
+					<input id="user" type="text" name="user" ><br>
+					<label>Password:</label>
+					<input id="pass" type="text" name="pass" ><br>
+
+
+					<div id="demo1">
+						
+						<p>Demo1</p>
+
+					</div>
+
+					<br>
+
+					<div id="demo2">
+						
+						<p>Demo2</p>
+
+					</div>
+
+			
+
+
+	        	</div>
+	     	 </div>
+
+
+
+	    </section>
+
+	    
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.js"></script>
+</body>
+</html>

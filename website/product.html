@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pho'geddaboudit!</title>
+  <meta charset="utf-8">
+  <meta name="author" content="James Fan">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link rel="shortcut icon" href="images/pho.png">
+    <style>
+
+    .center {
+      max-width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      position: fixed;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+      overflow: hidden;
+      z-index: -100;
+    }
+
+    .name {
+      padding: 20px;
+      padding-top: 10%;
+      color: #FDFDFD;
+      font-family: 'Kaushan Script', cursive, 'Lato';
+      font-weight: 500;
+      font-size: 5em;
+      padding-top: 50px;
+
+    }
+
+    .under {
+      font-weight: 200;
+      font-size: 2em;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      height: 100%;
+      width: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+    }
+
+    @media screen and (max-width: 680px) {
+      .name {
+        padding: 30px;
+      }
+
+  }
+
+  @media screen and (max-width: 980px) {
+      .name {
+        padding: 30px;
+      }
+  }
+
+
+
+    .project {
+      color: #FDFDFD;
+    }
+
+    #personal {
+      font-family:'lato', sans-serif;
+      font-weight: 200;
+      font-size: 1.2em;
+      color: #FDFDFD;
+      padding: 20px;
+
+    }
+
+    #radio {
+      font-family:'lato', sans-serif;
+      font-weight: 200;
+      font-size: 1.2em;
+      color: #FDFDFD;
+      padding: 20px;
+    }
+
+    #label {
+      font-family:'lato', sans-serif;
+      font-weight: 200;
+      font-size: 1.2em;
+      color: #FDFDFD;
+      padding: 20px;
+    }
+
+    #comment {
+      font-family:'lato', sans-serif;
+      font-weight: 200;
+      font-size: 1.2em;
+      color: #FDFDFD;
+      padding: 20px;
+    }
+    #guest {
+      font-family:'lato', sans-serif;
+      font-weight: 200;
+      font-size: 1.2em;
+      color: #FDFDFD;
+      padding: 20px;
+    }
+
+    #color {
+      font-family:'lato', sans-serif;
+      font-weight: 200;
+      font-size: 1.2em;
+      color: #FDFDFD;
+      padding: 20px;
+    }
+
+    #cool {
+      font-family:'lato', sans-serif;
+      font-weight: 200;
+      font-size: 1.2em;
+      color: slateblue;
+      padding: 20px;
+    }
+    #allergy {
+      font-family:'lato', sans-serif;
+      font-weight: 200;
+      font-size: 1.2em;
+      color: #FDFDFD;
+      padding: 20px;
+    }
+
+    #label {
+      font-family:'lato', sans-serif;
+      font-weight: 200;
+      font-size: 1.2em;
+      color: #FDFDFD;
+      padding: 20px;
+    }
+
+    </style>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="row">
+        <div class="col-12 center">
+            <video autoplay loop muted>
+            <source src="video/hero.mp4" type="video/mp4">
+        </video>
+        </div>
+    </div>
+
+    <header>
+      <nav>
+            <div class="row">
+              <div class="col-2 logo">
+                  <a href="index.html"><img src="images/pho.png" alt="Home"></a>
+              </div>
+              <div class="col-2 link">
+                  <a href="menu.html">Menu</a>
+              </div>
+              <div class="col-2 link">
+                <a href="about.html">About</a>
+              </div>
+              <div class="col-2 link">
+                <a href="catering.html">Catering</a>
+              </div>
+              <div class="col-2 link">
+                <a href="product.html">Products</a>
+              </div>
+              <div class="col-2 link">
+                  <a href="contact.html">Contact</a>
+              </div>
+            </div>
+          </nav>
+      </header>
+
+
+
+      <section class="featured-work">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 project" style="text-align: left">
+                
+
+
+              <form id="form" onsubmit="receipt()"; return false)>
+                <fieldset name="Order" class="products">
+                  <legend>Menu Items:</legend>
+                  <h3>Pho</h3>
+                  <img width='300' src="images/pho.jpg"><br>
+                  Price: $<input name="Price1" value='10' type="number" id="price1" readonly><br>
+                  Quantity: <input name="Quantity1" min="0" value='0' type="number" id="quantity1" size="10" onchange="total()"><br>
+                  <br>
+                  <br>
+                  <h3>Bahn Mi</h3>
+                  <img width='300' src="images/bahn.jpg"><br>
+                  Price: $<input name="Price2" value='12' type="number" id="price2" size="10" readonly> <br>
+                  Quantity: <input  name="Quantity2" min="0" value='0' type="number" id="quantity2" size="20" onchange="total()"><br>
+                  <br>
+                  <br>
+
+                  SubTotal: $<input name="Subtotal" value='0' type="number" id="subtotal" size=10 readonly=""><br>
+                </fieldset>
+
+
+              <fieldset name="Delivery Method">
+                <label>Delivery Method:</label> <br>
+                <input name="Delivery" type="radio" id="delivery" checked onchange="total()">Delivery<br>
+                <input name="Pick-Up" type="radio">Pick-Up<br>
+                Delivery Fee: $<input name="Delivery Fee" value="2" autofocus="autofocus" id='fee' readonly="" />
+              </fieldset>
+
+              <fieldset name="Grand Total">
+                  
+                  Grand Total: $<input name="Grand-Total" value='0.00' type="number" id="grandtotal" size=10 readonly=""><br>
+
+              </fieldset>
+
+                <fieldset name="Personal Information" id="personal">
+                  <legend>Personal Information:</legend>
+                  Name (max 20 characters): <input name="Name" type="text" id="fname" size="20" required="" ><br>
+                  E-mail (Must have @ sign): <input name="Email" type="text" id="email" size="20" required=""><br>
+                  Phone Number: <input name="Phone Number" type="number" id="phone" size=10 required=""><br>
+                </fieldset>
+                <fieldset name="Payment Information" id="personal">
+                  <legend>Payment Information:</legend>
+                  Street Address: <input name="Street Address" type="text" id="address" size="40" required=""><br>
+                  Street Address Line 2: <input name="Street Address 2" type="text" id="fname" size="40"><br>
+                  City: <input name="City" type="City" id="fname" size="30" required> 
+                  State: 
+                  <select name="State" type="state" id="state" size="1" required>
+                    <option>Alabama</option>
+                    <option>Alaska</option>
+                    <option>Arizona</option>
+                    <option>Arkansas</option>
+                    <option>California</option>
+                    <option>Colorado</option>
+                    <option>Connecticut</option>
+                    <option>Delware</option>
+                    <option>Florida</option>
+                    <option>Georgia</option>
+                    <option>Hawaii</option>
+                    <option>Idaho</option>
+                    <option>Illinois</option>
+                    <option>Indiana</option>
+                    <option>Iowa</option>
+                    <option>Kansas</option>
+                    <option>Kentucky</option>
+                    <option>Lousiana</option>
+                    <option>Maine</option>
+                    <option>Maryland</option>
+                    <option>Massachusetts</option>
+                    <option>Michagan</option>
+                    <option>Minnesota</option>
+                    <option>Mississippi</option>
+                    <option>Missouri</option>
+                    <option>Montana</option>
+                    <option>Nebraska</option>
+                    <option>Nevada</option>
+                    <option>New Hampshire</option>
+                    <option>New Jersey</option>
+                    <option>New Mexico</option>
+                    <option>New York</option>
+                    <option>North Carolina</option>
+                    <option>North Dakota</option>
+                    <option>Ohio</option>
+                    <option>Oregon</option>
+                    <option>Pennsylvania</option>
+                    <option>Rhode Island</option>
+                    <option>South Carolina</option>
+                    <option>South Dakota</option>
+                    <option>Tennessee</option>
+                    <option>Texas</option>
+                    <option>Utah</option>
+                    <option>Vermont</option>
+                    <option>Virginia</option>
+                    <option>Washington</option>
+                    <option>West Virginia</option>
+                    <option>Wisconsin</option>
+                    <option>Wyoming</option>
+                  </select>
+                  <br>
+                  Zipcode: <input name="Zipcode" type="zipcode" id="zipcode" size="5" required=""><br><br>
+                  Credit Card # (We do not take American Express): <input name="Credit Card"  type="number" id="card" size="20" required=""><br>
+                  Expiration: <input id='month' type="text" class="form-control" placeholder="Month" name="ExpMonth" />
+                  <input id='year' type="text" class="form-control" placeholder="Year" name="ExpYear" /><br>
+                  Security Code: <input name="Security Code" type="number" id="security" size=10 required=""><br>
+                </fieldset>
+
+        
+        
+              <br>
+
+
+              <br>
+
+              <button type="reset" value="Reset">Reset</button>
+              <br>
+              <button type="submit" value="Submit" onclick="validate()">Check Out</button>
+
+          
+
+             </form>
+
+             <div id="output">
+                
+                
+              </div>
+
+
+
+
+
+            </div>
+            </div>
+         <div class="col-3">
+           
+
+
+         </div>
+
+
+
+      </section>
+
+  </div>
+
+  <script src="js/cart.js"></script>
+  
+</body>
+</html>
